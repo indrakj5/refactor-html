@@ -1,18 +1,27 @@
 <template>
   <div>
-    <Navbar /> <router-view />
+    <Navbar /> <router-view /> <Home /> <About /> <Destinasi />>
+    <Contact />
     <Footer />
   </div>
 </template>
 
 <script>
-import Footer from "./components/Footer.vue";
 import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
+import Contact from "./components/Contact.vue";
+import Destinasi from "./components/Destinasi.vue";
+import About from "./components/About.vue";
+import Home from "./components/Home.vue";
 export default {
   name: "App",
   components: {
     Footer,
-    Navbar
+    Navbar,
+    Contact,
+    Destinasi,
+    About,
+    Home
   }
 };
 </script>
